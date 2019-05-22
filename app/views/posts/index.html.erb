@@ -1,17 +1,138 @@
-<p id="notice"><%= notice %></p>
+<!-- you can put this at the top of any view -->
 
-<h1>Posts</h1>
+<style>
+  body {
+  background: url(https://images.unsplash.com/photo-1484821582734-6c6c9f99a672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  /* for dynamic background image that changes with resource:
+  background url(@resource.url)
+  background-size: cover;
+  background-attachment: fixed; */
 
-  <tbody>
+.panel-a {
+  background: rgb(0, 0, 0, 0.8)
+  }
+
+body {
+  color:white
+}
+</style>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="panel-a">
+      <div class="panel-body">
+        <div class="col-sm-12 d-flex flex-row">
+          <div style="text-align:center">
+            <h1>Bootstrap Columns Centered</h1>
+
+
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <h3>this is the first of two columns</h3>
+                  </div>
+                  <div class="col">
+                    <h3>this is the second of two columns</h3>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                  <h3>second of three columns</h3>
+                </div>
+                <div class="col">
+                  <h3>third of three columns</h3>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col"><h4>one</h4></div>
+                  <div class="col"><h4>two</h4></div>
+                  <div class="col"><h4>three</h4></div>
+                  <div class="col"><h4>four</h4></div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <div class="row">
+                  <div class="col-8"><h1>col-8</h1></div>
+                  <div class="col-4"><h1>col-4</h1></div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
